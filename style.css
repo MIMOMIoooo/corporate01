@@ -1,0 +1,565 @@
+@charset "utf-8";
+
+/* 共通 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #868686;
+  text-decoration: none;
+}
+
+li, ol, ul {
+  list-style: none;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0, 123, 255, 0.60);
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.title {
+  margin: 0;
+  opacity: .5;
+  font-weight: 200;
+  font-size: 3rem;
+  letter-spacing: 0.12em;
+}
+.title-ja {
+  margin-bottom: 50px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.32em;
+}
+
+/* メインキャッチアップ */
+.carousel-inner img {
+  background: rgba(153, 148, 148, 0.5);
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  left: 15%;
+  z-index: 10;
+  padding: 0;
+  color: #fff;
+  top: 44%;
+}
+
+.carousel-inner h5 {
+  font-size: 5rem;
+  border-radius: 5px;
+  background-color: rgba(222, 226, 230, 0.47);
+  text-align: center;
+}
+
+/* 当社の強み */
+.strength {
+  margin-bottom: 90px;
+}
+
+.strength-reason {
+  line-height: 2;
+}
+
+/* 働き方インタビュー */
+.interview {
+  background-color: rgb(248, 249, 250)!important;
+}
+
+.comment {
+  justify-content: center;
+  margin: 0;
+}
+
+.comment1 {
+  padding: 0 45px;
+}
+
+.comment-wrap img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+.comment-wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: table-caption;
+  cursor : pointer;
+}
+
+.comment-wrap:hover {
+  opacity: .7;
+}
+
+.comment-text {
+  position: relative;
+  top: -120px;
+  width: 400px;
+  background-color: rgba(128, 128, 128, 0.43);
+  height: 120px;
+  padding: 10px 20px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.comment-text p:last-child{
+  color: white;
+  font-size: 14px;
+  /* width: 380px; */
+  margin: 0;
+  text-align: left;
+  padding: 5px 18px;
+}
+
+.classification {
+  color: #fff;
+  background-color: rgba(0, 123, 255, 0.5);
+  width: fit-content;
+  padding: .2rem;
+  border-radius: 5px;
+  margin: 5px 20px;
+}
+
+.btn {
+  position: relative;
+  top: -70px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(0, 123, 255, 0.51);
+  border: none;
+}
+
+
+/* サービス紹介と会社情報 */
+#picbox1 {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  zoom: 1;
+  background: #53565a;
+  position: relative;
+}
+
+/* picbox共通のテキスト */
+.picbox-text a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.65);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* サービス */
+#picbox1 .service-box {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+
+#picbox1 .service-box ul {
+  zoom: 1;
+}
+
+#picbox1 .service {
+  float: left;
+}
+
+#picbox1 .service:after {
+  background: url(./img/service.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: .5;
+}
+
+#picbox1 .picbox-full {
+  width: 100%;
+}
+
+#picbox1 .picbox-child {
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+}
+
+#picbox1 .picbox-full:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 38.28125%;
+}
+
+#picbox1 .picbox-child:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all .7s ease-out;
+}
+
+#picbox1 .picbox-child:hover:after {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+#picbox1 .title-wrap {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title-wrap {
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 70px;
+  line-height: 1.3;
+}
+
+/* 個人のお客様 */
+#picbox1 .personal {
+  float: left;
+}
+
+#picbox1 .picbox-quarter {
+  width: 50%;
+}
+
+#picbox1 .picbox-child {
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+}
+
+#picbox1 .picbox-quarter:before {
+  content: "";
+  display: block;
+  width: 100%;
+  /* padding-top: 76.5625%; */
+  /* padding-top: 77.5625%; */
+  padding-top: 112.5625%;
+}
+
+#picbox1 .personal:after {
+  background: url(./img/personal.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: .5;
+}
+
+#picbox1 .picbox-quarter .title {
+  font-size: 2.8rem;
+  line-height: 1;
+  letter-spacing: .14em;
+}
+
+/* 法人のお客様 */
+#picbox1 .business {
+  float: left;
+}
+
+#picbox1 .business:after {
+  background: url(./img/business.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: .5;
+}
+
+/* 会社情報 */
+#picbox1 .corporate {
+  float: left;
+}
+
+#picbox1 .picbox-half {
+  width: 50%;
+}
+
+#picbox1 .picbox-high:before {
+  content: "";
+  display: block;
+  width: 100%;
+  /* padding-top: 76.5625%; */
+  padding-top: 94.563%;
+}
+
+#picbox1 .corporate:after {
+  background: url(./img/corporate01.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: .5;
+}
+
+/* 事業紹介 */
+#picbox2 {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  background: #53565a;
+  position: relative;
+}
+
+#picbox2:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 38.28125vw;
+}
+
+#picbox2:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all .7s ease-out;
+  background: url(./img/organization.jpg) no-repeat center center;
+  opacity: .5;
+}
+
+#picbox2:hover:after {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+/* 採用情報 */
+#picbox3 {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  background: #53565a;
+  position: relative;
+}
+
+#picbox3:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 38.28125vw;
+}
+
+#picbox3:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all .7s ease-out;
+  background: url(./img/recruit.jpg) no-repeat center center;
+  opacity: .5;
+}
+
+#picbox3:hover:after {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+/* ニュース */
+.news .content-wrapper,
+.blog .content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.news .content-wrapper li {
+  border-bottom: dotted 1px #dedede;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.news .content-wrapper li a {
+  color: #333;
+}
+
+.news .content-wrapper li a:hover {
+  opacity: 0.6;
+}
+
+.news .content-wrapper li time {
+  font-size: 0.75em;
+  color: #949494;
+  padding-right: 0px;
+  margin-right: 80px;
+}
+
+/* ブログ */
+.blog .btn {
+  position: inherit;
+  top: 0;
+}
+
+.blog .card-link:hover {
+
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  background-color: rgb(248, 249, 250);
+}
+
+.footer-wrap {
+  max-width: 980px;
+  /* margin: 0 auto; */
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.footer-wrap ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.footer-compliance ul {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 4rem auto 2rem auto;
+}
+
+.footer-wrap a,
+.footer-compliance a{
+  color: #5f5f5f;
+}
+
+.copylight {
+  height: 55px;
+}
+
+.copylight p {
+  color: #53565a;
+  margin: 0;
+  text-align: center;
+  line-height: 55px;
+}
+
+@media (max-width: 1200px) {
+  .comment1 {
+    padding: 0;
+  }
+  .comment-wrap {
+    display: block;
+    width: 320px;
+  }
+  .comment-wrap img {
+    width: 320px;
+  }
+  .comment-text {
+    width: 320px;
+    padding: 5px 7px;
+    margin: 0;
+  }
+}
+
+/* タブレット */
+@media (max-width: 992px) {
+  .title {
+    font-size: 2rem;
+  }
+  .title-ja {
+    font-size: 1rem;
+  }
+  /* ブログ */
+  .card-group {
+    display: block;
+  }
+  footer {
+    padding: 0 20px;
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* 働き方インタビュー */
+  .comment1 {
+    padding: 0;
+  }
+  .comment-wrap {
+    display: block;
+    /* width: fit-content; */
+    height: 355px;
+  }
+  .interview .btn {
+    display: none;
+  }
+  .news .content-wrapper li {
+    margin: 0 20px;
+  }
+
+  /* サービス紹介と会社情報 */
+  #picbox1 .service-box {
+    width: 100%;
+  }
+  #pibox1 .service {
+    width: 100%;
+  }
+  #picbox1 .picbox-full {
+    width: 100%;
+  }
+  #picbox1 .picbox-quarter {
+    width: 50%;
+  }
+  #picbox1 .picbox-half {
+    width: 100%;
+    height: 300px;
+  }
+  #picbox2, #picbox3 {
+    height: 300px;
+  }
+  .title-wrap {
+    margin-bottom: 0;
+  }
+}
+
+/* スマホ */
+@media (max-width: 576px) {
+  .row {
+    margin: 0;
+  }
+  #picbox1 .picbox-quarter .title {
+    font-size: 1.8rem;
+  }
+  .footer-wrap {
+    margin: 0;
+  }
+  .footer-wrap ul {
+    display: block;
+    padding: 0;
+  }
+  .footer-wrap li {
+    padding-bottom: 20px;
+  }
+  .footer-compliance ul {
+    flex-direction: column;
+    margin: 0;
+  }
+  .footer-compliance li {
+    padding: 5px 0;
+  }
+}
