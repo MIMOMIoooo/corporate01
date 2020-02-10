@@ -55,13 +55,13 @@ li, ol, ul {
 
 .carousel-caption {
   position: absolute;
+  top: 44%;
   right: 15%;
   bottom: 0;
   left: 15%;
   z-index: 10;
   padding: 0;
   color: #fff;
-  top: 44%;
 }
 
 .carousel-inner h5 {
@@ -122,21 +122,20 @@ li, ol, ul {
 }
 
 .comment-text p:last-child{
-  color: white;
-  font-size: 14px;
-  /* width: 380px; */
   margin: 0;
-  text-align: left;
   padding: 5px 18px;
+  font-size: 14px;
+  color: white;
+  text-align: left;
 }
 
 .classification {
-  color: #fff;
-  background-color: rgba(0, 123, 255, 0.5);
   width: fit-content;
   padding: .2rem;
-  border-radius: 5px;
   margin: 5px 20px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: rgba(0, 123, 255, 0.5);
 }
 
 .btn {
@@ -144,13 +143,13 @@ li, ol, ul {
   top: -70px;
   display: block;
   margin: 0 auto;
-  background-color: rgba(0, 123, 255, 0.51);
   border: none;
+  background-color: rgba(0, 123, 255, 0.51);
 }
 
 
-/* サービス紹介と会社情報 */
-#picbox1 {
+/* サービス紹介と会社概要 */
+.picbox1 {
   width: 100%;
   margin: 0;
   overflow: hidden;
@@ -163,9 +162,9 @@ li, ol, ul {
 .picbox-text a {
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
   height: 100%;
   color: rgba(255, 255, 255, 0.65);
   display: flex;
@@ -176,44 +175,44 @@ li, ol, ul {
 }
 
 /* サービス */
-#picbox1 .service-box {
+.picbox1 .service-box {
   float: left;
   width: 50%;
   overflow: hidden;
 }
 
-#picbox1 .service-box ul {
+.picbox1 .service-box ul {
   zoom: 1;
 }
 
-#picbox1 .service {
+.picbox1 .service {
   float: left;
 }
 
-#picbox1 .service:after {
+.picbox1 .service:after {
   background: url(./img/service.jpg) no-repeat center center;
   background-size: cover;
   opacity: .5;
 }
 
-#picbox1 .picbox-full {
+.picbox1 .picbox-full {
   width: 100%;
 }
 
-#picbox1 .picbox-child {
+.picbox1 .picbox-child {
   overflow: hidden;
   position: relative;
   vertical-align: top;
 }
 
-#picbox1 .picbox-full:before {
+.picbox1 .picbox-full:before {
   content: "";
   display: block;
   width: 100%;
   padding-top: 38.28125%;
 }
 
-#picbox1 .picbox-child:after {
+.picbox1 .picbox-child:after {
   position: absolute;
   top: 0;
   content: "";
@@ -223,95 +222,92 @@ li, ol, ul {
   transition: all .7s ease-out;
 }
 
-#picbox1 .picbox-child:hover:after {
+.picbox1 .picbox-child:hover:after {
   transform: scale(1.05);
   opacity: 0.85;
 }
 
-#picbox1 .title-wrap {
+.picbox1 .title-wrap {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .title-wrap {
-  text-align: center;
   margin-top: 45px;
   margin-bottom: 70px;
+  text-align: center;
   line-height: 1.3;
 }
 
 /* 個人のお客様 */
-#picbox1 .personal {
+.picbox1 .personal {
   float: left;
 }
 
-#picbox1 .picbox-quarter {
+.picbox1 .picbox-quarter {
   width: 50%;
 }
 
-#picbox1 .picbox-child {
+.picbox1 .picbox-child {
   overflow: hidden;
   position: relative;
   vertical-align: top;
 }
 
-#picbox1 .picbox-quarter:before {
+.picbox1 .picbox-quarter:before {
   content: "";
   display: block;
   width: 100%;
-  /* padding-top: 76.5625%; */
-  /* padding-top: 77.5625%; */
   padding-top: 112.5625%;
 }
 
-#picbox1 .personal:after {
+.picbox1 .personal:after {
   background: url(./img/personal.jpg) no-repeat center center;
   background-size: cover;
   opacity: .5;
 }
 
-#picbox1 .picbox-quarter .title {
+.picbox1 .picbox-quarter .title {
   font-size: 2.8rem;
   line-height: 1;
   letter-spacing: .14em;
 }
 
 /* 法人のお客様 */
-#picbox1 .business {
+.picbox1 .business {
   float: left;
 }
 
-#picbox1 .business:after {
+.picbox1 .business:after {
   background: url(./img/business.jpg) no-repeat center center;
   background-size: cover;
   opacity: .5;
 }
 
 /* 会社情報 */
-#picbox1 .corporate {
+.picbox1 .corporate {
   float: left;
 }
 
-#picbox1 .picbox-half {
+.picbox1 .picbox-half {
   width: 50%;
 }
 
-#picbox1 .picbox-high:before {
+.picbox1 .picbox-high:before {
   content: "";
   display: block;
   width: 100%;
-  /* padding-top: 76.5625%; */
   padding-top: 94.563%;
 }
 
-#picbox1 .corporate:after {
+.picbox1 .corporate:after {
   background: url(./img/corporate01.jpg) no-repeat center center;
   background-size: cover;
   opacity: .5;
 }
 
 /* 事業紹介 */
-#picbox2 {
+.picbox2 {
   width: 100%;
   height: 550px;
   overflow: hidden;
@@ -319,14 +315,14 @@ li, ol, ul {
   position: relative;
 }
 
-#picbox2:before {
+.picbox2:before {
   content: "";
   display: block;
   width: 100%;
   padding-top: 38.28125vw;
 }
 
-#picbox2:after {
+.picbox2:after {
   position: absolute;
   top: 0;
   content: "";
@@ -338,13 +334,13 @@ li, ol, ul {
   opacity: .5;
 }
 
-#picbox2:hover:after {
+.picbox2:hover:after {
   transform: scale(1.05);
   opacity: 0.85;
 }
 
 /* 採用情報 */
-#picbox3 {
+.picbox3 {
   width: 100%;
   height: 550px;
   overflow: hidden;
@@ -352,14 +348,14 @@ li, ol, ul {
   position: relative;
 }
 
-#picbox3:before {
+.picbox3:before {
   content: "";
   display: block;
   width: 100%;
   padding-top: 38.28125vw;
 }
 
-#picbox3:after {
+.picbox3:after {
   position: absolute;
   top: 0;
   content: "";
@@ -371,7 +367,7 @@ li, ol, ul {
   opacity: .5;
 }
 
-#picbox3:hover:after {
+.picbox3:hover:after {
   transform: scale(1.05);
   opacity: 0.85;
 }
@@ -385,9 +381,9 @@ li, ol, ul {
 }
 
 .news .content-wrapper li {
-  border-bottom: dotted 1px #dedede;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-bottom: dotted 1px #dedede;
 }
 
 .news .content-wrapper li a {
@@ -399,20 +395,16 @@ li, ol, ul {
 }
 
 .news .content-wrapper li time {
+  margin-right: 80px;
+  padding-right: 0px;
   font-size: 0.75em;
   color: #949494;
-  padding-right: 0px;
-  margin-right: 80px;
 }
 
 /* ブログ */
 .blog .btn {
   position: inherit;
   top: 0;
-}
-
-.blog .card-link:hover {
-
 }
 
 /* フッター */
@@ -423,7 +415,6 @@ footer {
 
 .footer-wrap {
   max-width: 980px;
-  /* margin: 0 auto; */
   margin: 2rem auto;
   overflow: hidden;
 }
@@ -453,12 +444,194 @@ footer {
 }
 
 .copylight p {
-  color: #53565a;
   margin: 0;
   text-align: center;
   line-height: 55px;
+  color: #53565a;
 }
 
+/* -----------service.htmlのスタイル----------- */
+#service .picbox1 .service-box {
+  width: 100%;
+}
+
+#service .picbox1 .service {
+  float: none;
+}
+
+#service .about-service {
+  position: relative;
+  top: 55px;
+}
+
+#service .picbox1 .picbox-quarter {
+  width: 100%;
+  height: 600px;
+}
+
+#service .picbox1 .personal {
+  float: none;
+}
+
+#service .title-wrap {
+  position: relative;
+  top: 12px;
+  color: #dae0e5;
+}
+
+#service .service .title-wrap {
+  top: 50px;
+}
+
+#service .personal-list,
+#service .business-list {
+  display: contents;
+}
+
+.personal-list ul {
+  justify-content: center;
+}
+
+#service .personal-list li,
+#service .business-list li {
+  padding: 10px 35px;
+}
+
+#service .btn {
+  top:50px
+}
+
+/* -----------about.htmlのスタイル----------- */
+.about {
+  position: relative;
+  top: 150px;
+}
+
+.overview table th {
+  width: 36%;
+  white-space: nowrap;
+  padding-left: 70px;
+  padding-right: 30px;
+  color: #7a7a7a;
+}
+
+.overview table td {
+  width: 64%;
+}
+
+dt {
+  font-weight: 400;
+}
+
+.overview table th, .overview table td {
+  border-bottom: 1px solid #d9d9d6;
+  vertical-align: top;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.about .footer-wrap {
+  margin: 0 auto;
+}
+
+/* -----------organization.htmlのスタイル----------- */
+.organization {
+  position: relative;
+  top: 74px;
+}
+
+/* -----------recruit.htmlのスタイル----------- */
+.recruit {
+  position: relative;
+  top: 75px;
+}
+
+.greeting-img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.greeting .greeting-text {
+  padding-top: 30px;
+}
+
+.greeting .position {
+  margin: 0;
+  opacity: .5;
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+}
+
+.greeting h4 {
+  font-size: 2rem;
+}
+
+.greeting strong {
+  font-size: 1.5rem;
+}
+
+.recruit .picbox1 .service-box {
+  width: 100%;
+}
+.recruit .picbox1 .service {
+  width: 100%;
+}
+.recruit .picbox1 .picbox-full {
+  width: 100%;
+}
+.recruit .picbox1 .picbox-quarter {
+  width: 50%;
+  height: 400px;
+}
+
+.greeting-wrap {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.greeting-wrap .row {
+  flex-direction: row-reverse;
+}
+
+.recruit .footer-wrap {
+  margin: 0 auto;
+}
+
+/* -----------contact.htmlのスタイル----------- */
+.contact {
+  position: relative;
+  top: 100px;
+}
+
+.phone:before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f879';
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.form-group {
+  /* margin: 0 auto; */
+  margin: 0 auto 20px auto;
+}
+
+.radio-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+textarea.form-control {
+  height: 150px;
+}
+
+.contact .btn {
+  position: relative;
+  top: 0;
+}
+
+
+
+/* -----------PC-L----------- */
 @media (max-width: 1200px) {
   .comment1 {
     padding: 0;
@@ -472,20 +645,20 @@ footer {
   }
   .comment-text {
     width: 320px;
-    padding: 5px 7px;
     margin: 0;
+    padding: 5px 7px;
   }
 }
 
-/* タブレット */
+/* -----------PC----------- */
 @media (max-width: 992px) {
-  .title {
+  .title,
+  #service .title {
     font-size: 2rem;
   }
   .title-ja {
     font-size: 1rem;
   }
-  /* ブログ */
   .card-group {
     display: block;
   }
@@ -493,16 +666,31 @@ footer {
     padding: 0 20px;
     font-size: 85%;
   }
+  /* .service.html */
+  #service .about-service {
+    top: 40px;
+    width: 500px;
+    text-align: center;
+  }
+  #service .service-box ul {
+    height: fit-content;
+    font-size: 70%
+  }
+  #service .service-box li {
+    padding: 10px 20px;
+  }
+  #service .btn {
+    top: 35px;
+  }
 }
 
+/* -----------タブレット----------- */
 @media (max-width: 768px) {
-  /* 働き方インタビュー */
   .comment1 {
     padding: 0;
   }
   .comment-wrap {
     display: block;
-    /* width: fit-content; */
     height: 355px;
   }
   .interview .btn {
@@ -511,38 +699,49 @@ footer {
   .news .content-wrapper li {
     margin: 0 20px;
   }
-
-  /* サービス紹介と会社情報 */
-  #picbox1 .service-box {
+  .picbox1 .service-box {
     width: 100%;
   }
-  #pibox1 .service {
+  .picbox1 .service {
     width: 100%;
   }
-  #picbox1 .picbox-full {
+  .picbox1 .picbox-full {
     width: 100%;
   }
-  #picbox1 .picbox-quarter {
+  .picbox1 .picbox-quarter {
     width: 50%;
   }
-  #picbox1 .picbox-half {
+  .picbox1 .picbox-half {
     width: 100%;
     height: 300px;
   }
-  #picbox2, #picbox3 {
+  .picbox2, .picbox3 {
     height: 300px;
   }
   .title-wrap {
     margin-bottom: 0;
   }
+
+  /* .service.html */
+  #service .about-service {
+    top: 20px;
+  }
+
+  #service .picbox1 .picbox-quarter {
+    height: 500px;
+  }
+
+  #service .text-center h3 {
+    font-size: 20px;
+  }
 }
 
-/* スマホ */
+/* -----------スマホ----------- */
 @media (max-width: 576px) {
   .row {
     margin: 0;
   }
-  #picbox1 .picbox-quarter .title {
+  .picbox1 .picbox-quarter .title {
     font-size: 1.8rem;
   }
   .footer-wrap {
@@ -562,4 +761,32 @@ footer {
   .footer-compliance li {
     padding: 5px 0;
   }
+  /* .service.html */
+  #service .about-service {
+    top: 0;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  #service .service-box ul {
+    flex-direction: column;
+  }
+
+  #service .title-wrap {
+    top: 30px;
+  }
+
+  #service .service-box .btn {
+    top: 0;
+  }
+
+  #service .picbox1 .service {
+    height: 300px;
+  }
+
+  #service .service-box .personal {
+    height: 610px;
 }
+}
+
