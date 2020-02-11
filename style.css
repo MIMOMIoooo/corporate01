@@ -48,7 +48,7 @@ li, ol, ul {
   letter-spacing: 0.32em;
 }
 
-/* メインキャッチアップ */
+/* カルーセル（TOPのスライドするところ） */
 .carousel-inner img {
   background: rgba(153, 148, 148, 0.5);
 }
@@ -507,27 +507,16 @@ footer {
   top: 150px;
 }
 
-.overview table th {
-  width: 36%;
-  white-space: nowrap;
-  padding-left: 70px;
-  padding-right: 30px;
-  color: #7a7a7a;
+.table-borderless tr {
+  height: 80px;
 }
 
-.overview table td {
-  width: 64%;
-}
-
-dt {
-  font-weight: 400;
-}
-
-.overview table th, .overview table td {
+.table-borderless tr:not(:last-child) {
   border-bottom: 1px solid #d9d9d6;
-  vertical-align: top;
-  padding-top: 24px;
-  padding-bottom: 24px;
+}
+
+.table-borderless .table-th {
+  width: 40%;
 }
 
 .about .footer-wrap {
@@ -573,12 +562,15 @@ dt {
 .recruit .picbox1 .service-box {
   width: 100%;
 }
+
 .recruit .picbox1 .service {
   width: 100%;
 }
+
 .recruit .picbox1 .picbox-full {
   width: 100%;
 }
+
 .recruit .picbox1 .picbox-quarter {
   width: 50%;
   height: 400px;
@@ -611,7 +603,6 @@ dt {
 }
 
 .form-group {
-  /* margin: 0 auto; */
   margin: 0 auto 20px auto;
 }
 
@@ -631,8 +622,8 @@ textarea.form-control {
 
 
 
-/* -----------PC-L----------- */
-@media (max-width: 1200px) {
+/* 大デバイス（デスクトップ, 1200px 未満） */
+@media (max-width: 1199.98px) {
   .comment1 {
     padding: 0;
   }
@@ -650,8 +641,8 @@ textarea.form-control {
   }
 }
 
-/* -----------PC----------- */
-@media (max-width: 992px) {
+/* 中デバイス（タブレット, 992px 未満） */
+@media (max-width: 991.98px) {
   .title,
   #service .title {
     font-size: 2rem;
@@ -666,7 +657,7 @@ textarea.form-control {
     padding: 0 20px;
     font-size: 85%;
   }
-  /* .service.html */
+  /* service.html */
   #service .about-service {
     top: 40px;
     width: 500px;
@@ -684,8 +675,8 @@ textarea.form-control {
   }
 }
 
-/* -----------タブレット----------- */
-@media (max-width: 768px) {
+/* 小デバイス（横向きモバイル, 768px 未満） */
+@media (max-width: 767.98px) {
   .comment1 {
     padding: 0;
   }
@@ -722,22 +713,25 @@ textarea.form-control {
     margin-bottom: 0;
   }
 
-  /* .service.html */
+  /* service.html */
   #service .about-service {
     top: 20px;
   }
-
   #service .picbox1 .picbox-quarter {
     height: 500px;
   }
-
   #service .text-center h3 {
     font-size: 20px;
   }
+
+  /* about.html */
+  .table-borderless tbody {
+    font-size: 1rem;
+  }
 }
 
-/* -----------スマホ----------- */
-@media (max-width: 576px) {
+/* 極小デバイス（縦向きモバイル, 576px 未満） */
+@media (max-width: 575.98px) {
   .row {
     margin: 0;
   }
@@ -761,32 +755,32 @@ textarea.form-control {
   .footer-compliance li {
     padding: 5px 0;
   }
-  /* .service.html */
+  /* service.html */
   #service .about-service {
     top: 0;
     width: 300px;
     margin-top: 10px;
     margin-bottom: 0;
   }
-  
   #service .service-box ul {
     flex-direction: column;
   }
-
   #service .title-wrap {
     top: 30px;
   }
-
   #service .service-box .btn {
     top: 0;
   }
-
   #service .picbox1 .service {
     height: 300px;
   }
-
   #service .service-box .personal {
     height: 610px;
-}
+  }
+  /* about.html */
+  .about .table-borderless th,
+  .about .table-borderless td {
+  font-size: 76%;
+  }
 }
 
